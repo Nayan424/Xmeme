@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XMEME</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styleindex.css">
+  </head>
+  <body>
+    <div class="heading">
+        <h1 id="heading1">MEME STREAM</h1>
+        <h4  id="heading2">Anyone can contribute here..</h4>
+    </div>
+    <br>
+    <div class="input">
+        <form action="/post" method="GET">
+            <button type="submit">Post a meme!</button>
+        </form>
+    </div>
+    <div class="group">
+        <% data.reverse().forEach(function(data){ %>
+            <div class="memes">
+                <h2><%=data.name%></h2><br>
+                <h4><%=data.caption%></h4><br>
+                <img src=<%=data.url%>>
+            </div>
+        <%})%>
+    </div>
+    <p>&copy; Nayan Gupta</p>
+  </body>
+</html>

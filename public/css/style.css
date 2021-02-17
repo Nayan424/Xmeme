@@ -1,0 +1,52 @@
+body{
+    background-color:  cornflowerblue;
+}
+.heading{
+    margin-top: 2%;
+    background-image: url(../images/heading.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 35% 100%;
+    background-position: right;
+    background-color: rgb(247, 219, 95);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid white;
+}
+#heading1{
+    font-size: 300%;
+}
+#heading2{
+    font-size: 130%;
+    font-style: italic;
+    margin-left: 35%;
+}
+input{
+    display: inline;
+}
+h2{
+    color: cornflowerblue;
+}
+.input{
+    background-color:black;
+    margin-top: 2%;
+    width: 25%;
+    margin-left: 35%;
+    text-align: center;
+}
+.middle{
+    border-radius: 0;
+}
+.top{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.bottom{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+button{
+    background-color: rgb(250, 163, 1);
+    font-weight: bolder;
+}
