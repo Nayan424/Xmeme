@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true}))
 
-mongoose.connect('mongodb+srv://Nayan424:nayan101@xmeme.u2zcj.mongodb.net/memesDB',{useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://Nayan424:<password>@xmeme.u2zcj.mongodb.net/memesDB',{useNewUrlParser: true, useUnifiedTopology: true});
 
 const memeSchema=new mongoose.Schema({
     name: String,
